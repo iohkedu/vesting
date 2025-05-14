@@ -1,16 +1,30 @@
-# Starter Next.js TypeScript
+# Vesting DApp
 
-Start a new project on Next.js. This starter template consists of a connect wallet button and wallet integration.
+This is a simple DApp that allows you to create a vesting schedule for ADA. It is built using NextJS whit the MeshJS library.
+
+The intent of this project is to showcase how to create off-chain code using MeshJS and to practice it. For that reason, there's a `without-off-chain` branch that has all the setup and web2 wiring done but it misses key web3 components that you can try to implement yourself.
+
       
 ## Getting Started
 
-Start project locally using CLI:
-
+1. Switch to the `with-off-chain` branch:
 ```bash
-npx meshjs app-name
+git checkout with-off-chain
 ```
 
-## Learn More
+2. Install dependencies:
+```bash
+pnpm i
+```
+
+3. Start project locally:
+```bash
+pnpm run dev
+```
+
+4. Try to implement the missing functionality
+
+## Learn More About MeshJS
 
 ### [APIs](https://meshjs.dev/apis)
 
@@ -27,11 +41,3 @@ Open-source smart contracts, complete with documentation, live demos, and end-to
 ### [React components and hooks](https://meshjs.dev/react)
 
 Frontend components for wallet connections, and useful React hooks to getting wallet states - Mesh provides everything you need to bring your Web3 user interface to life.
-
-## Connect with us
-
-Give a star on our [GitHub](https://meshjs.dev/go/github) to stay up to date with our latest developments.
-
-Follow us on [Twitter](https://meshjs.dev/go/twitter) for updates.
-
-Join our [Discord](https://meshjs.dev/go/discord) for any questions and suggestions.
