@@ -33,7 +33,7 @@ export default function Home() {
                 throw new Error(data.error || 'Failed to create vesting UTxO');
             }
 
-            const signedTx = await wallet.signTx(data.balancedTx, false);
+            const signedTx = await wallet.signTx(data.balancedTx, true);
             const txHash = await wallet.submitTx(signedTx);
 
             setSuccess(`Vesting UTxO created successfully! Tx hash: ${txHash}`);
@@ -67,7 +67,7 @@ export default function Home() {
                 throw new Error(data.error || 'Failed to consume vesting UTxO');
             }
 
-            const signedTx = await wallet.signTx(data.balancedTx, false);
+            const signedTx = await wallet.signTx(data.balancedTx, true);
             const txHash = await wallet.submitTx(signedTx);
 
             setSuccess(`Vesting UTxO consumed successfully! Tx hash: ${txHash}`);
