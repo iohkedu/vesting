@@ -27,7 +27,7 @@ export default async function handler(
         if (!utxoRef || utxoIndex === undefined || !address) {
             return res.status(400).json({
                 success: false,
-                error: 'Missing required parameters: utxoRef, utxoIndex, address, or deadline'
+                error: 'Missing required parameters: utxoRef, utxoIndex, address'
             });
         }
 
