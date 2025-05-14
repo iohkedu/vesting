@@ -7,9 +7,9 @@ The intent of this project is to showcase how to create off-chain code using Mes
       
 ## Getting Started
 
-1. Switch to the `with-off-chain` branch:
+1. Switch to the `without-off-chain` branch:
 ```bash
-git checkout with-off-chain
+git checkout without-off-chain
 ```
 
 2. Install dependencies:
