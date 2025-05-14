@@ -4,6 +4,7 @@ This is a simple DApp that allows you to create a vesting schedule for ADA. It i
 
 The intent of this project is to showcase how to create off-chain code using MeshJS and to practice it. For that reason, there's a `without-off-chain` branch that has all the setup and web2 wiring done but it misses key web3 components that you can try to implement yourself.
 
+![Vesting Diagram](./vesting-diagram.png)
       
 ## Getting Started
 
